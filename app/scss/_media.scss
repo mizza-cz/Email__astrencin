@@ -1,0 +1,59 @@
+@media(max-width: 760px){
+   .contact{
+      padding-right: 60px;
+   }
+}
+
+@media(max-width: 700px){
+   .contact{
+      padding-right: 0;
+   }
+   .contacts__inner{
+      padding-left: 0;
+   }
+}
+
+@media(max-width: 500px){
+   .contacts__logo img{
+      width: 80px;
+      height: 70px;
+   }
+}
+@media(max-width: 448px){
+   .contact__adress span,
+   .contact__phone span{
+      padding: 0 4px;
+   }
+}
+@media(max-width: 430px){
+   .contact__adress{
+      margin-bottom: 10px;
+      width: 56%;
+      line-height: 20px;
+      span{
+         display: none;
+      }
+   }
+   .contact__mail,
+   .contact__fax{
+      margin-bottom: 10px;
+   }
+   .contact__phone{
+
+      margin-bottom: 10px;
+      span{
+         display: none;
+      }
+   }
+   .contact__phone a{
+      width: 100%;
+      margin-bottom: 0;
+      line-height: 20px;
+   }
+   
+}
+@media(max-width: 360px){
+   .contact__adress{
+      width: 100%;
+   }
+}

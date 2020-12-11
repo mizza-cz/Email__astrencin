@@ -1,8 +1,145 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 
-
+.contacts{
+   padding-top: 15px;
+}
 .contacts__logo img{
    width: 119px;
    height: 100px;
+   display: block;
+   object-fit: cover;
 }
+.contacts__inner{
+   display: flex;
+   padding-left: 30px;
+}
+.contact__user{
+   color: $accent;
+   border-bottom: 1px solid #e0e1e3;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   &-name{
+      font-family: 'HelveticaNeue-Bold', sans-serif;  
+      font-weight: 700;
+      font-size: 24px;
+   }
+   &-position{
+      font-size: 12px;
+      line-height: 16px;
+   }
+}
+/// contact
+.contact{
+   padding-right: 120px;
+   margin-top: 10px;
+   width: 100%;
+}
+.contact__info{
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 15px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #e0e1e3;
+}
+// contact info
+.contact__phone{
+   padding-left: 25px;
+   position: relative;
+   a{
+      margin-bottom: 15px;
+   }
+   & a:last-of-type{
+      margin-right: 20px;
+   }
+   span{
+      font-size: 16px;
+      line-height: 16px;
+      padding: 0 8px;
+   }
+   &::before{
+      content: "\e048";
+      position: absolute;
+      font-family: 'simple-line-icons';
+      left: 0;
+      color: $accent;
+   }
+}
+.contact__fax{
+   padding-left: 24px;
+   position: relative;
+   margin-right: 20px;
+   margin-bottom: 15px;
+   &::before{
+      content: "\e085";
+      position: absolute;
+      font-family: 'simple-line-icons';
+      left: 0;
+      color: $accent;
+   }
+}
+.contact__mail{
+   padding-left: 24px;
+   position: relative;
+   margin-bottom: 15px;
+   &::before{
+      content: "\e01e";
+      position: absolute;
+      font-family: 'simple-line-icons';
+      left: 0;
+      color: $accent;
+   }
+  
+}
+.contact__adress{
+   margin-bottom: 15px;
+   width: 100%;
+   padding-left: 24px;
+   position: relative;
+   span{
+      font-size: 16px;
+      line-height: 16px;
+      padding: 0 8px;
+   }
+   &::before{
+      content: "\e096";
+      position: absolute;
+      font-family: 'simple-line-icons';
+      left: 0;
+      color: $accent;
+   }
+}
+.contact__link{
+   padding-left: 24px;
+   position: relative;
+   width: 100%;
+   &::before{
+      content: "\e037";
+      position: absolute;
+      font-family: 'simple-line-icons';
+      left: 0;
+      color: $accent;
+   }
+}
+
+/// social
+.social__menu{
+   display: flex;
+   padding-bottom: 35px;
+}
+.social__list+.social__list{
+   margin-left: 3px;
+}
+.social__list a{
+   width: 35px;
+   height: 35px;
+   background-color: $accent;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+}
+
+@import 'media';
